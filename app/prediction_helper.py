@@ -1,12 +1,16 @@
 import pandas as pd
 from joblib import load
+from pathlib import Path
 
 # Loading the models and scalers
-model_young = load('artifacts/model_young.joblib')
-model_rest = load('artifacts/model_rest.joblib')
+BASE_DIR = Path(__file__).parent
+ARTIFACTS_DIR = BASE_DIR / "artifacts"
 
-scaler_young = load('artifacts/scaler_young.joblib')
-scaler_rest = load('artifacts/scaler_rest.joblib')
+model_young = load(ARTIFACTS_DIR / "model_young.joblib")
+model_rest = load(ARTIFACTS_DIR / "model_rest.joblib")
+
+scaler_young = load(ARTIFACTS_DIR / "scaler_young.joblib")
+scaler_rest = load(ARTIFACTS_DIR / "scaler_rest.joblib")
 
 def handle_scaling(age, df):
     if age <= 25:
