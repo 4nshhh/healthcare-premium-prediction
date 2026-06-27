@@ -8,7 +8,7 @@ The project demonstrates the complete Data Science lifecycle—from data preproc
 
 ## 🚀 Live Demo
 
-🔗 **Application:** https://healthcare-premium-prediction-4nshhh.streamlit.app/
+🔗 **Application:** [Healthcare Insurance Premium Predictor](https://healthcare-premium-prediction-4nshhh.streamlit.app/)
 
 ---
 
